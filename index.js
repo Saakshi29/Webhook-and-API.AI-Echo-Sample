@@ -15,7 +15,7 @@ restService.use(bodyParser.json());
 
 restService.post("/", function(req, res) {
   var speech =
-    req.body.metadata.intentName ;
+    req.body.result.metadata.intentName ;
   return res.json({
     speech: speech,
     displayText: speech,
