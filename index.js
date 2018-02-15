@@ -57,7 +57,7 @@ var general='Teaching in the university is achieved through various specialized 
   ' highly qualified faculties of respective subjects. The department has two well equipped laboratories of'+
  '  Applied Chemistry/ Environmental Studies and 
 ' Applied Physics with trained staff.'; 
-  
+  if(req.body.result.metadata.intentName=="dep"){
   if(req.body.result.parameters.stream=="CSE")
   {
   
@@ -144,6 +144,91 @@ var general='Teaching in the university is achieved through various specialized 
   });
   
   }
+  }
+  else if(req.body.result.metadata.intentName=="facilities"){
+          var des='The main objective of the opening of the university dispensary was to provide primary health care mainly in the form of first aid to the university students. The dispensary is equipped with over the counter medications, bed to rest in, medical equipments, physical screening tools and first aid supplies. A team of one registered medical practitioner along with one registered nurse is available from 09:00 am to 05:00 pm.';
+          var lib='Learning Resource Centre (LRC) serves as the premier source of academic information for the IGDTU community through its collections, educational and consulting services. The LRC has a highly selective collection of print, electronic, and audiovisual materials in the areas of science, engineering, technology and management to support the learning and research activities of students and faculty. A number of e- journals are being subscribed through consortia mode subscription. All these journals are available online to the member of the LRC in campus LAN. The Digital Library section has e-materials like CDs, DVDs and digital thesis of final year students and are available through an Open Source Institution Repository Software within the campus premises.';
+          var cc='The university has on campus computing facility (computer lab) housed in centralized air conditioned premises, named as "Computer Center".Computer Center runs a web-server based application that automates the programming problem submission process';
+          var bank=' The Punjab and Sind bank is available in the university premises.';
+          var guest='The guest house within the campus has limited accomdation for the staying purpose of individuals visiting the campus. The rooms are comfortable with all modern facilities available within.';
+          var common='The university has a common room for girls, equipped with fitness equipments, yoga facility and indoor games.';
+          var hostel='The University has two women hostels - Krishna Hostel and Kaveri Hostel, to accommodate approximately 300 students.These two hostels are located in the University campus. These hostels provide a safe, secure and clean environment for the students to grow, learn and mature in the society away from their own homes. The hostel authorities always facilitate to create an environment for the students to study, do well in their academics and focus on their career and future. All rooms are on twin/triple sharing basis and are equipped with individual beds, chairs, built-in cupboards and study tables.';
+          
+    
+  if(req.body.result.parameters.facili=="dispansary")
+  {
+  
+  
+  return res.json({
+  speech: des,
+  displayText: des,
+  source: "Webhook",
+  });
+  }
+  else if(req.body.result.parameters.facili=="library")
+  {
+  
+  
+  return res.json({
+  speech: lib,
+  displayText: lib,
+  source: "Webhook",
+  });
+  }
+   
+  else if(req.body.result.parameters.facili=="cc")
+  {
+  
+  
+  return res.json({
+  speech: cc,
+  displayText: cc,
+  source: "Webhook",
+  });
+  }
+  else if(req.body.result.parameters.facili=="bank")
+  {
+  
+  
+  return res.json({
+  speech: bank,
+  displayText: bank,
+  source: "Webhook",
+  });
+  }
+  else if(req.body.result.parameters.facili=="guest house")
+  {
+  
+  
+  return res.json({
+  speech: guest,
+  displayText: guest,
+  source: "Webhook",
+  });
+  }
+  else if(req.body.result.parameters.facili=="common room")
+  {
+  
+  
+  return res.json({
+  speech: common,
+  displayText: common,
+  source: "Webhook",
+  });
+  }
+  else if(req.body.result.parameters.facili=="hostel")
+  {
+  
+  
+  return res.json({
+  speech: hostel,
+  displayText: hostel,
+  source: "Webhook",
+  });
+  } 
+    
+    
+          }
   
 });
 
