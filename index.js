@@ -19,7 +19,7 @@ restService.post("/", function(req, res) {
   return res.json({
     
     source: "webhook-echo-sample",
-    
+    platform:"slack",
     "attachments": [
         {
             "fallback": "Required plain-text summary of the attachment.",
