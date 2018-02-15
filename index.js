@@ -17,38 +17,92 @@ restService.post("/", function(req, res) {
   var speech ='https://www.youtube.com/results?search_query=sending+pdf+and+links+in+response+of+diologflow';
  
   return res.json({
-    
-    source: "webhook-echo-sample",
-   "data": {"slack": {
-    "text": speech,
-    "attachments": [
-        {
-            "title": "hello",
-            "title_link": "navendu",
-            "color": "#36a64f",
+   {
+  "speech": "",
+  "displayText": "",
+  "data": {
 
-            "fields": [
-                {
-                    "title": "Condition",
-                    "value": "Temp ",
-                    "short": "false"
-                },
-                {
-                    "title": "Wind",
-                    "value": "speed",
-                    "short": "true"
-                },
-                {
-                    "title": "Atmosphere",
-                    "value": "H",
-                    "short": "true"
-                }
-            ],
+  },
+  "contextOut": [
 
-            "thumb_url":"https://www.w3schools.com/howto/howto_js_image_comparison.asp"
+  ],
+  "source": "Webhook",
+  "messages": [
+    {
+      "type": 4,
+      "platform": "skype",
+      "speech": "",
+      "payload": {
+        "skype": {
+          "attachmentLayout": "list",
+          "attachments": [
+            {
+              "contentType": "application\/vnd.microsoft.card.hero",
+              "content": {
+                "title": "Unit 2A",
+                "subtitle": "",
+                "text": "These timeslots are available for 2017-10-16",
+                "images": [
+
+                ],
+                "buttons": [
+                  {
+                    "type": "imBack",
+                    "title": "from 13:00 until 14:00 Unit 2A",
+                    "value": "from 13:00 until 14:00 Unit 2A"
+                  },
+                  {
+                    "type": "imBack",
+                    "title": "from 14:00 until 15:00 Unit 2A",
+                    "value": "from 14:00 until 15:00 Unit 2A"
+                  },
+                  {
+                    "type": "imBack",
+                    "title": "from 15:00 until 16:00 Unit 2A",
+                    "value": "from 15:00 until 16:00 Unit 2A"
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "application\/vnd.microsoft.card.hero",
+              "content": {
+                "title": "Unit 1",
+                "subtitle": "",
+                "text": "These timeslots are available for 2017-10-16",
+                "images": [
+
+                ],
+                "buttons": [
+                  {
+                    "type": "imBack",
+                    "title": "from 13:00 until 14:00 Unit 1",
+                    "value": "from 13:00 until 14:00 Unit 1"
+                  },
+                  {
+                    "type": "imBack",
+                    "title": "from 14:00 until 15:00 Unit 1",
+                    "value": "from 14:00 until 15:00 Unit 1"
+                  },
+                  {
+                    "type": "imBack",
+                    "title": "from 15:00 until 16:00 Unit 1",
+                    "value": "from 15:00 until 16:00 Unit 1"
+                  },
+                  {
+                    "type": "imBack",
+                    "title": "from 16:00 until 17:00 Unit 1",
+                    "value": "from 16:00 until 17:00 Unit 1"
+                  }
+                ]
+              }
+            }
+          ]
         }
-    ]
-}},
+      }
+    }
+  ]
+}
 
   });
 });
