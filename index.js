@@ -26,18 +26,10 @@ restService.post("/", function(req, res) {
 restService.post("/", function(req, res) {
   var speech ='https://www.youtube.com/results?search_query=sending+pdf+and+links+in+response+of+diologflow';
  
-  return res.json({
-    "buttons": [
-      {
-        "postback": "https://github.com/dialogflow/dialogflow-nodejs-client-v2",
-        "text": "Card Link Title"
-      }
-    ],
-    "imageUrl": "",
+  return res.json( {
+    "imageUrl": "https://www.w3schools.com/howto/howto_js_image_comparison.asp",
     "platform": "slack",
-    "subtitle": "hello",
-    "title": "hello",
-    "type": 1
+    "type": 3
   });
 });
 
