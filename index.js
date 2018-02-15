@@ -21,10 +21,10 @@ restService.post("/", function(req, res) {
     source: "webhook-echo-sample",
     
      fulfillmentMessages: [
-    {
+    {platform:"SLACK",
       image: {
    imageUri: "https://www.w3schools.com/howto/img_fjords.jpg"
-  }
+  },
       
       
     }
