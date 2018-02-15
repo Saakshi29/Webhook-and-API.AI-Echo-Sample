@@ -24,7 +24,7 @@ restService.post("/", function(req, res) {
      "fulfillmentMessages": [
     {
       "image": {
-   "imageUri": string
+   "imageUri": "https://www.w3schools.com/howto/img_fjords.jpg"
   }
       
       
