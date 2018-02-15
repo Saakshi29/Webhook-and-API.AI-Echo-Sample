@@ -51,6 +51,13 @@ var general='Teaching in the university is achieved through various specialized 
  ' students and Research Scholars. Department facilitates the availability of resources and facilities to the students for the '+
   'smooth conduction of the academics.Department builds the guidelines & policies for the effective and timely management of the'+
   'academics in the institution.  The various departments are CSE, IT, ECE, MAE, AAP.';
+ var doa='A strong high-rise building can be built only on a strong foundation, which signifies the importance of the Department '+
+ 'of Applied Sciences. The important objective of the Department is to prepare and train the first year B. Tech students in Physics,'+
+   'Chemistry, Mathematics and Communication skills with an applied approach. The Applied Sciences Department constitutes of eight '+
+  ' highly qualified faculties of respective subjects. The department has two well equipped laboratories of'+
+ '  Applied Chemistry/ Environmental Studies and 
+' Applied Physics with trained staff.'; 
+  
   if(req.body.result.parameters.stream=="CSE")
   {
   
@@ -107,8 +114,8 @@ var general='Teaching in the university is achieved through various specialized 
   
   
   return res.json({
-  speech: ece,
-  displayText: ece,
+  speech: doa,
+  displayText: doa,
   source: "Webhook",
   });
   }
@@ -118,8 +125,8 @@ var general='Teaching in the university is achieved through various specialized 
   
   
   return res.json({
-  speech: ece,
-  displayText: ece,
+  speech: aap,
+  displayText: aap,
   source: "Webhook",
   });
   }
