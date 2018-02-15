@@ -17,14 +17,13 @@ restService.post("/", function(req, res) {
   var speech ='https://www.youtube.com/results?search_query=sending+pdf+and+links+in+response+of+diologflow';
  
   return res.json({
-    speech: speech,
-    displayText: speech,
+    
     source: "webhook-echo-sample",
     
-     "fulfillmentMessages": [
+     fulfillmentMessages: [
     {
-      "image": {
-   "imageUri": "https://www.w3schools.com/howto/img_fjords.jpg"
+      image: {
+   imageUri: "https://www.w3schools.com/howto/img_fjords.jpg"
   }
       
       
