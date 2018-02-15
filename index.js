@@ -41,7 +41,7 @@ restService.post("/", function(req, res) {
   'students are exposed to various modern equipment in the area of mechanical and automation .';
 
 
-  if(req.body.result.parameters.dep=="CSE")
+  if(req.body.result.parameters.stream=="CSE")
   {
   
   return res.json({
