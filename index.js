@@ -22,6 +22,7 @@ restService.post("/", function(req, res) {
   speech: speech,
   displayText: 'hey',
   source: "Webhook",
+    platform:"slack",
 
   });
 });
