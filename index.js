@@ -45,7 +45,7 @@ restService.post("/", function(req, res) {
                 }
             ],
 
-            "thumb_url": "http://l.yimg.com/a/i/us/we/52/" + condition.get('code') + ".gif"
+            "thumb_url":"https://www.w3schools.com/howto/howto_js_image_comparison.asp"
         }
     ]
 }},
