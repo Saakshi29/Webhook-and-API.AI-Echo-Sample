@@ -39,8 +39,18 @@ restService.post("/", function(req, res) {
    ' refrigeration and air conditioning, machine tools, metrology, robotics and CAD(CAM) etc.  The department has well-equipped '+
   'laboratories in related fields and'+
   'students are exposed to various modern equipment in the area of mechanical and automation .';
-
-
+var aap='The Department of Architecture and Planning started in 2015 as a step towards social equity and gender parity'+
+'in technical professions, having a vision that architectural education should empower students to become protagonist of positive '+
+'change by exploring, learning and practicing a sustainable form of architecture. The architectural education must, besides imparting'+ 
+'knowledge, also endeavor to create opportunities for students to engage with real life issues, so that they can reflect on their'+
+'role in creating a better world. Further, it is also important that students are empowered to make informed choices, which are more'+
+'life-sustaining. The department aims at development of the individual girl as a responsible member of peaceful, '+
+'pluralist and inclusive society by learning to explore and practicing quality, sustainable form of architecture. ';
+var general='Teaching in the university is achieved through various specialized departments. Each department through HOD '+
+'ensures that the mechanisms are in place to promote regular contact between academics, support staff graduate/post-graduate'+
+ ' students and Research Scholars. Department facilitates the availability of resources and facilities to the students for the '+
+  'smooth conduction of the academics.Department builds the guidelines & policies for the effective and timely management of the'+
+  'academics in the institution.  The various departments are CSE, IT, ECE, MAE, AAP.';
   if(req.body.result.parameters.stream=="CSE")
   {
   
@@ -49,7 +59,7 @@ restService.post("/", function(req, res) {
   displayText: cse,
   source: "Webhook",
   });}
-  else if(req.body.result.parameters.department=="ECE")
+  else if(req.body.result.parameters.stream=="ECE")
   {
   
   
@@ -58,6 +68,74 @@ restService.post("/", function(req, res) {
   displayText: ece,
   source: "Webhook",
   });
+  }
+  else if(req.body.result.parameters.stream=="IT")
+  {
+  
+  
+  return res.json({
+  speech: speech,
+  displayText: it,
+  source: "Webhook",
+  });
+  }
+  
+  else if(req.body.result.parameters.stream=="electrical")
+  {
+  
+  
+  return res.json({
+  speech: speech,
+  displayText: ece,
+  source: "Webhook",
+  });
+  }
+  
+  else if(req.body.result.parameters.stream=="mech")
+  {
+  
+  
+  return res.json({
+  speech: speech,
+  displayText: me,
+  source: "Webhook",
+  });
+  }
+  
+  else if(req.body.result.parameters.stream=="ASH")
+  {
+  
+  
+  return res.json({
+  speech: speech,
+  displayText: ece,
+  source: "Webhook",
+  });
+  }
+  
+  else if(req.body.result.parameters.stream=="AAP")
+  {
+  
+  
+  return res.json({
+  speech: speech,
+  displayText: ece,
+  source: "Webhook",
+  });
+  }
+  else
+  {
+  
+  
+  
+  
+    
+  return res.json({
+  speech: speech,
+  displayText: general,
+  source: "Webhook",
+  });
+  
   }
   
 });
