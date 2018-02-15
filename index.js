@@ -23,27 +23,24 @@ restService.post("/", function(req, res) {
     "text": speech,
     "attachments": [
         {
-            "title": channel.get('title'),
-            "title_link": channel.get('link'),
+            "title": "hello",
+            "title_link": "navendu",
             "color": "#36a64f",
 
             "fields": [
                 {
                     "title": "Condition",
-                    "value": "Temp " + condition.get('temp') +
-                             " " + units.get('temperature'),
+                    "value": "Temp ",
                     "short": "false"
                 },
                 {
                     "title": "Wind",
-                    "value": "Speed: " + channel.get('wind').get('speed') +
-                             ", direction: " + channel.get('wind').get('direction'),
+                    "value": "speed",
                     "short": "true"
                 },
                 {
                     "title": "Atmosphere",
-                    "value": "Humidity " + channel.get('atmosphere').get('humidity') +
-                             " pressure " + channel.get('atmosphere').get('pressure'),
+                    "value": "H",
                     "short": "true"
                 }
             ],
