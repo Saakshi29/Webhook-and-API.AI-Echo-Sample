@@ -19,7 +19,7 @@ restService.post("/", function(req, res) {
   return res.json({
     
     source: "webhook-echo-sample",
-   "data": {"slack": {"hello navendu"}},
+   "data": {"slack": {"text":"hellonhjjvk"}},
 
   });
 });
