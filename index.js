@@ -175,7 +175,6 @@ var general='Teaching in the university is achieved through various specialized 
   source: "Webhook",
   });
   }
-   
   else if(req.body.result.parameters.facili=="cc")
   {
   
