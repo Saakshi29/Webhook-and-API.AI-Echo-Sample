@@ -33,7 +33,7 @@ restService.post("/", function(req, res) {
       }
     ],
     "imageUrl": "http://urltoimage.com",
-    "platform": "facebook",
+    "platform": "slack",
     "subtitle": "Card Subtitle",
     "title": "Card Title",
     "type": 1
