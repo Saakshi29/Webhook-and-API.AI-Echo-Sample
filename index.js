@@ -12,7 +12,7 @@ restService.use(
 );
 
 restService.use(bodyParser.json());
-/*
+
 restService.post("/", function(req, res) {
   var speech ='https://www.youtube.com/results?search_query=sending+pdf+and+links+in+response+of+diologflow';
  
@@ -20,17 +20,19 @@ restService.post("/", function(req, res) {
     speech: speech,
     displayText: speech,
     source: "webhook-echo-sample"
-  });
-});*/
-restService.post("/", function(req, res) {
-  var speech ='https://www.youtube.com/results?search_query=sending+pdf+and+links+in+response+of+diologflow';
- 
-  return res.json({
-    speech: speech,
-    platform: "slack",
-    type: 0
+    
+     "fulfillmentMessages": [
+    {
+      "image": {
+   "imageUri": string
+  }
+      
+      
+    }
+  ],
   });
 });
+
 
 
 
