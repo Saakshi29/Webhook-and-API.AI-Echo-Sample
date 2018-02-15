@@ -14,7 +14,7 @@ restService.use(
 restService.use(bodyParser.json());
 
 restService.post("/", function(req, res) {
-  var speech ='hello navendu';
+  
  var cse='The Computer Science and Engineering Department is the most versatile department '+
 ' of college and caters to the needs of other departments as well.'+ 
  'The department aims at developing the fundamental conceptual knowledge along with the total'+
@@ -64,7 +64,7 @@ var general='Teaching in the university is achieved through various specialized 
   
   
   return res.json({
-  speech: speech,
+  speech: ece,
   displayText: ece,
   source: "Webhook",
   });
@@ -74,7 +74,7 @@ var general='Teaching in the university is achieved through various specialized 
   
   
   return res.json({
-  speech: speech,
+  speech: it,
   displayText: it,
   source: "Webhook",
   });
@@ -85,7 +85,7 @@ var general='Teaching in the university is achieved through various specialized 
   
   
   return res.json({
-  speech: speech,
+  speech: ece,
   displayText: ece,
   source: "Webhook",
   });
@@ -96,7 +96,7 @@ var general='Teaching in the university is achieved through various specialized 
   
   
   return res.json({
-  speech: speech,
+  speech: me,
   displayText: me,
   source: "Webhook",
   });
@@ -107,7 +107,7 @@ var general='Teaching in the university is achieved through various specialized 
   
   
   return res.json({
-  speech: speech,
+  speech: ece,
   displayText: ece,
   source: "Webhook",
   });
@@ -118,7 +118,7 @@ var general='Teaching in the university is achieved through various specialized 
   
   
   return res.json({
-  speech: speech,
+  speech: ece,
   displayText: ece,
   source: "Webhook",
   });
@@ -131,7 +131,7 @@ var general='Teaching in the university is achieved through various specialized 
   
     
   return res.json({
-  speech: speech,
+  speech: general,
   displayText: general,
   source: "Webhook",
   });
