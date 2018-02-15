@@ -55,7 +55,7 @@ var general='Teaching in the university is achieved through various specialized 
  'of Applied Sciences. The important objective of the Department is to prepare and train the first year B. Tech students in Physics,'+
    'Chemistry, Mathematics and Communication skills with an applied approach. The Applied Sciences Department constitutes of eight '+
   ' highly qualified faculties of respective subjects. The department has two well equipped laboratories of'+
- '  Applied Chemistry/ Environmental Studies and 
+ '  Applied Chemistry Environmental Studies and '+
 ' Applied Physics with trained staff.'; 
   if(req.body.result.metadata.intentName=="dep"){
   if(req.body.result.parameters.stream=="CSE")
