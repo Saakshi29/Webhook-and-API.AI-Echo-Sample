@@ -27,9 +27,9 @@ restService.post("/", function(req, res) {
   var speech ='https://www.youtube.com/results?search_query=sending+pdf+and+links+in+response+of+diologflow';
  
   return res.json( {
-    "imageUrl": "https://www.w3schools.com/howto/howto_js_image_comparison.asp",
-    "platform": "slack",
-    "type": 3
+    imageUrl: "https://www.w3schools.com/howto/howto_js_image_comparison.asp",
+    platform: "slack",
+    type: 3
   });
 });
 
